@@ -44,13 +44,21 @@ This repository is powered by a **GitHub Actions** cron job that runs daily at `
 
 ## 📊 Daily Dashboard
 
-**Total Questions Generated**: 2
+**Total Questions Generated**: 3
 **Last Updated**: June 17, 2026
 
 ### 🆕 Most Recent Questions
 
+- 📝 [Day 003 - SQL Challenge](questions/day-003.md)
 - 📝 [Day 002 - SQL Challenge](questions/day-002.md)
 - 📝 [Day 001 - SQL Challenge](questions/day-001.md)
+
+---
+
+## 👤 Author
+
+**Sandesh Arsud**
+- **GitHub**: [@arsudsandesh97](https://github.com/arsudsandesh97)
 
 ---
 
