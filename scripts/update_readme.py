@@ -93,6 +93,13 @@ This repository is powered by a **GitHub Actions** cron job that runs daily at `
 
 ---
 
+## 👤 Author
+
+**Sandesh Arsud**
+- **GitHub**: [@arsudsandesh97](https://github.com/arsudsandesh97)
+
+---
+
 *Generated automatically with ❤️ by SQL-Interview-365 Bot.*
 """
     

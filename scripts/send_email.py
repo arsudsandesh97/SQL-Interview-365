@@ -29,7 +29,7 @@ A new SQL Interview Question has been successfully generated for {current_date}.
 
 📁 File Name: {file_name}
 📅 Date Generated: {current_date}
-🔗 Repository Link: https://github.com/arsudsandesh97/Daily-SQL
+🔗 Repository Link: https://github.com/arsudsandesh97/SQL-Interview-365
 
 Here is the question:
 =========================================================
