@@ -1,0 +1,53 @@
+name: Daily SQL Interview Question
+
+on:
+  schedule:
+    # Runs at 02:30 UTC (08:00 IST) every day
+    - cron: '30 2 * * *'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  generate-question:
+    runs-on: ubuntu-latest
+    
+    # Needs permissions to push changes back to the repository
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Generate and Save Question
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: |
+          python scripts/main.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add questions/ README.md
+          
+          # Only commit if there are changes
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "Automated generation of Daily SQL Interview Question"
+            git push
+          else
+            echo "No changes to commit."
+          fi
