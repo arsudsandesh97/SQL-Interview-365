@@ -44,11 +44,12 @@ This repository is powered by a **GitHub Actions** cron job that runs daily at `
 
 ## 📊 Daily Dashboard
 
-**Total Questions Generated**: 120
-**Last Updated**: October 14, 2026
+**Total Questions Generated**: 121
+**Last Updated**: October 15, 2026
 
 ### 🆕 Most Recent Questions
 
+- 📝 [Day 121 - SQL Challenge](questions/day-121.md)
 - 📝 [Day 120 - SQL Challenge](questions/day-120.md)
 - 📝 [Day 119 - SQL Challenge](questions/day-119.md)
 - 📝 [Day 118 - SQL Challenge](questions/day-118.md)
@@ -58,7 +59,6 @@ This repository is powered by a **GitHub Actions** cron job that runs daily at `
 - 📝 [Day 114 - SQL Challenge](questions/day-114.md)
 - 📝 [Day 113 - SQL Challenge](questions/day-113.md)
 - 📝 [Day 112 - SQL Challenge](questions/day-112.md)
-- 📝 [Day 111 - SQL Challenge](questions/day-111.md)
 
 ---
 
